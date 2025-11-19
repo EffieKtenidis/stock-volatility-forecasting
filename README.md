@@ -62,12 +62,28 @@ The repository includes:
 
 ---
 
-## Files
-- `data_cleaning.py` — Preprocessing, feature engineering, and merging sentiment and financial data  
-- `garch_model.py` — GARCH(3,3) baseline implementation  
-- `ml_models.py` — Random Forest, XGBoost, LSTM, and Linear Regression model implementations  
+## Folders
+- `1 Year Data` — Preprocessing, feature engineering, and merging sentiment and financial data
+  - 'FINAL_1YEAR_DATA.csv' - Final combined Yahoo, Reddit, and HackerNews data
+  - 'News1year.csv' - One year of HackerNews data
+  - 'yahooredditcombined.csv' - Final combined Yahoo and Reddit data
+  - 'combineall.ipynb' - Python script for combining all data
+  - 'yahooreddit.ipynb' - Python script for combining Yahoo and Reddit data
+- `3 Year Data' - Preprocessing, feature engineering, and merging sentiment and financial data
+  - '3year_finance_data.csv' - 3 years of Yahoo finance data
+  - 'Combined_3year_data.csv' - 3 years of combined Yahoo, Reddit and HackerNews data
+  - 'year3news.csv' - 3 years of HackerNews data
+  - 'combining_3yr_data.ipynb' - Python script combining 3 years of Yahoo, Reddit and HackerNews data
+- `Webscrape' - Pulling of Reddit, Yahoo Finance, and HackerNews data
+  - '4240commentscrape.ipynb' - Python script to scrape Reddit comments
+  - '4240webscrape.ipynb' - Python script to scrape Yahoo Finance data and run GARCH model
+  - BigQueryScript.ipynb - SQL script to query HackerNews data in Google BigQuery. Must be run in BigQuery
+  - 'bqData.ipynb' - Python script pulling and cleaning HackerNews data
+- 'MODELS' - Forecasting models ran and tested
+  - 'garch_volatility_predictions.csv' - GARCH results
+  - 'Logistic_Regression.ipynb' - Python Logistic Regression model; omitted from analysis
+  - XGBoostModel.ipynb - Python XGBoost model
 - `final_paper.pdf` — Detailed report of methodology, results, and analysis  
-- `data/` — Raw and processed datasets  
 
 ---
 
