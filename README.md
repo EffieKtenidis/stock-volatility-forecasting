@@ -69,7 +69,3 @@ I specifically contributed to:
 
 ## Running the Code
 - All `.ipynb` scripts can be run in Google Colab.  
-- Make sure to mount Google Drive and update file paths as needed:  
-```python
-from google.colab import drive
-drive.mount('/content/drive')
