@@ -4,7 +4,8 @@
 This group project investigates predicting next-day stock volatility by combining traditional financial data (from Yahoo Finance) with alternative data sources, including Reddit and HackerNews sentiment. Multiple models were implemented and evaluated:
 
 - **Baseline:** GARCH(3,3)  
-- **Machine Learning Models:** XGBoost (regression), Linear Regression (regression)    
+- **Machine Learning Models:** XGBoost (regression), Logistic Regression (classification), Random Forest (classification)
+- **Deep Learning:** LSTM (RNN)
 
 The goal was to determine if sentiment data could improve volatility predictions beyond historical price-based patterns.
 
@@ -16,28 +17,9 @@ I specifically contributed to:
 - **Data Cleaning & Preprocessing:** Financial and sentiment data were cleaned, merged, and aligned with trading days.  
 - **Feature Engineering:** Lagged features, realized volatility, and sentiment indicators were created, carefully avoiding data leakage.  
 - **GARCH Implementation:** Created baseline volatility forecasts using the `arch` package.  
-- **Linear Regression Model:** Implemented a regression baseline; performance was poor compared to other models and omitted from the final analysis.  
-- **XGBoost:** Implemented per-ticker regression model for next-day volatility prediction.  
-
----
-
-## Models
-
-### Baseline: GARCH
-- GARCH(3,3) fitted per ticker using past price returns.  
-- Forecasts next-day volatility independently for each stock.  
-- Average RMSE: 0.0115  
-
-### Linear Regression
-- Implemented as a simple regression baseline.  
-- Used lagged volatility, sentiment, and volume features.  
-- Poor performance relative to other models; omitted from final comparisons.    
-
-### XGBoost (Regression)
-- Per-ticker regression model for next-day volatility.  
-- Average RMSE: 0.0069  
-- Sentiment features improved accuracy modestly.    
-
+- **Logistic Regression Model:** Implemented a classification baseline; performance was poor compared to other models and omitted from the final analysis.  
+- **XGBoost:** Implemented per-ticker regression model for next-day volatility prediction.
+- **Mathematical Support:** Assisted with interpreting evaluation metrics and providing theoretical guidance for the Random Forest and LSTM models implemented by teammates.
 ---
 
 ## Folders
@@ -63,8 +45,11 @@ I specifically contributed to:
 - **`MODELS`** — Forecasting models run and tested
   - **`garch_volatility_predictions.csv`** - GARCH results  
   - **`Logistic_Regression.ipynb`** - Python Logistic Regression model; omitted from analysis  
-  - **`XGBoostModel.ipynb`** - Python XGBoost model  
+  - **`XGBoostModel.ipynb`** - Python XGBoost model
+  - **`Random_Forest.ipynb`** - Python Random Forest classification model
+  - **`LSTM_RNN.ipynb`** - Python Long Short-Term Memory network
 
+- **Final Paper** - Comprehensive project report written collaboratively by the team (PDF)
 ---
 
 ## Running the Code
