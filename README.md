@@ -53,4 +53,5 @@ I specifically contributed to:
 ---
 
 ## Running the Code
-- All `.ipynb` scripts can be run in Google Colab.  
+- All `.ipynb` scripts can be run in Google Colab.
+- This repository is intended as a demonstration of the algorithmic logic and pipeline structure. Due to large file sizes, the necessary raw data files are not all committed. Therefore, the scripts may not run perfectly but clearly illustrate the intended methodology.
